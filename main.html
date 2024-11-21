@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-*{
-    background-color: rgb(135, 206, 235);
+	<link rel="stylesheet" href="styles.css">
+	    <style>
+        :root{
+            background-color: rgb(135, 206, 235);
+        }
+    #p1{
+        background-color: black;
+        color: white;
+       
 }
-#s1{
-    color: white;
-    background-color: black;
-}
-
-#s2{
+#p3{
     color: red;
 }
-.c1{
-    font-size: 22px;
-    background-color: white;
-}
-li{
-    background-color: white;
+
+ul{
     width: 50%;
     padding: 10px;
 
 }
-
-
-
-#li4{
-    background-color: #d63384;
-   
+article:nth-child(2) {
+color: white; 
 }
-.c2{
-    background-color: #8c9aac;
+article:first-child{
+	background: black;
+		color: white;		
+			
+}
+article:last-child{
+color: red;
+			}
+li:first-child, li:last-child{
+    background-color: white;
+    font-size: 22px;
+}
+li:nth-child(odd) {
+    background-color: white;
 }
 
+li:nth-child(even) {
+    background-color: gray;
+}
+li:nth-last-child(3){
+    background-color: pink;
 
+}
 
-
-
-    </style>
+</style>
 </head>
+
 <body>
-    <p id="s1">First paragraph</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque?</p>
+	<article>
+	   <p id="p1">First paragraph</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti repellat odio quibusdam aspernatur unde laudantium nam ullam vero quia id.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti repellat odio quibusdam aspernatur unde laudantium nam ullam vero quia id.</p>
 
-    <p id="s2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam suscipit laborum, ut nihil aliquid.</p>
-
+<p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ipsam suscipit laborum, ut nihil aliquid</p>
+		</article>
     <ul>
-
-        <li class="c1">First item</li>
-        <li class="c2">Second item</li>
-        <li id="li4">Third item</li>
-        <li class="c2">Fourth item</li>
-        <li class="c1">Fifth item</li>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
     </ul>
-    
+
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
